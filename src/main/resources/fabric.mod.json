@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "rightclickmending",
+  "version": "${version}",
+  "name": "RightClickMending",
+  "description": "Hold right click with a mending item to repair it using your own XP.",
+  "authors": [
+    "bdemmy"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "bdemmy.rightclickmending.client.RightClickMendingClient"
+    ],
+    "main": [
+      "bdemmy.rightclickmending.RightClickMending"
+    ]
+  },
+  "mixins": [
+    "RightClickMending.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.10.6+build.214",
+    "fabric": "*",
+    "minecraft": "1.16.5"
+  }
+}
